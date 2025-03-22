@@ -93,5 +93,5 @@ class Main:
 
 if __name__ == "__main__":
     # Initialize the Main class and run the simulation
-    app = Main("simulation-path") 
-    app.run()
+    env = "./simulation-path" # Replace with the actual built simulation path
+    env.run()

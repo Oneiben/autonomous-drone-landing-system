@@ -13,8 +13,8 @@
   - [Landing Process in Action](#landing-process-in-action)
     - [Downward Camera View](#downward-camera-view)
   - [Installation](#installation)
-  - [Usage](#usage)
   - [Project Structure](#project-structure)
+  - [Usage](#usage)
   - [Technologies Used](#technologies-used)
   - [Contributing](#contributing)
     - [Steps to Contribute:](#steps-to-contribute)
@@ -66,28 +66,6 @@ Follow these steps to set up the project:
 
 ---
 
-## Usage
-
-1. **Set up your simulation environment:**
-If you want to test in simulation, you can check out this simulation and build a Unity simulation.🔗 [Quadrotor Simulation](https://github.com/Oneiben/quadrotor-simulation-unity.git)
-
-   Once you build the Unity simulation, note the path to the build file. You’ll need this path when running the main script.
-
-2. **Launch the main script to start the landing system:**
-
-   ```bash
-   python src/main.py  <path-to-your-simulation-build>
-   ```
-
-3. **Test Detection Methods:**
-   Use the test scripts in the [📂 tests](./tests/) folder to validate the detection methods with a webcam. YOLO models located in [📂 models](./models/) are used for detecting two landing pads. Ensure the model names align with the images provided in the [📂 landing_pad_images](./Media/landing_pad_images/) directory.
-   - Example for testing YOLO:
-     ```bash
-     python tests/ip_test_Yolo.py
-     ```
-
----
-
 ## Project Structure
 
 ```plaintext
@@ -113,6 +91,28 @@ autonomous-drone-landing-system/
 ├── README.md
 └── requirements.txt            # Python Dependencies
 ```
+
+---
+
+## Usage
+
+1. **Set up your simulation environment:**
+If you want to test in simulation, you can check out this simulation and build a Unity simulation.🔗 [Quadrotor Simulation](https://github.com/Oneiben/quadrotor-simulation-unity.git)
+
+   Once you build the Unity simulation, note the path to the build file. You’ll need this path when running the main script.
+
+2. **Launch the main script to start the landing system:**
+
+   ```bash
+   python src/main.py  <path-to-your-simulation-build>
+   ```
+
+3. **Test Detection Methods:**
+   Use the test scripts in the [📂 tests](./tests/) folder to validate the detection methods with a webcam. YOLO models located in [📂 models](./models/) are used for detecting two landing pads. Ensure the model names align with the images provided in the [📂 landing_pad_images](./Media/landing_pad_images/) directory.
+   - Example for testing YOLO:
+     ```bash
+     python tests/ip_test_Yolo.py
+     ```
 
 ---
 
